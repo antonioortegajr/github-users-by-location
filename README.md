@@ -5,6 +5,8 @@ Find and display github users by location search
 
 This project is to display github users by location search. This will be an MVP. A more production project may be started elsewhere.
 
+githubusersbylocation.com
+
 ## Use Case
 
 In seaching for a local coding community it can be difficult to have an idea of how large that community is. While not 100% github users is a data point.
