@@ -33,7 +33,8 @@ Example API call:
 https://api.github.com/search/users?q=location:Eugene,%20Oregon&page=20&per_page=10
 
 Sample Retrun: 
-`{
+```
+{
   "total_count": 191,
   "incomplete_results": false,
   "items": [
@@ -81,3 +82,4 @@ Sample Retrun:
     },
   ]
 }
+```
