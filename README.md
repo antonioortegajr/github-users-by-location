@@ -21,9 +21,6 @@ https://api.github.com/search/users?q=location:Eugene,%20Oregon&page=20&per_page
 - Frontend: svelt
 - Infrastructure: teraform
 - Cloud : AWS
-  - Lambda
-  - S3
-  - Cloud Watch
 - CI/CD: Github Actions
 
 
