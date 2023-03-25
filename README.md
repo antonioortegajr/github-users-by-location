@@ -13,7 +13,7 @@ In searching for a local coding community it can be difficult to have an idea of
 
 
 Example API call:
-https://api.github.com/search/users?q=location:Eugene,%20Oregon&page=20&per_page=10
+https://api.github.com/search/users?q=location:Eugene&page=20&per_page=10
 
 ## Stack
 
