@@ -37,7 +37,7 @@ https://api.github.com/search/users?q=location:Eugene&page=20&per_page=10
 Install the dependencies...
 
 ```bash
-cd svelte-app
+cd github-users-by-location 
 npm install
 ```
 
