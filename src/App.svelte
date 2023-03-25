@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Headline from "./components/Headline.svelte"
-	import { apiData, drinkNames } from "./js/store"
+	import { apiData } from "./js/store"
 	export let inputValue = ""
 	export let results = apiData
 

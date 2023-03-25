@@ -3,7 +3,7 @@ import { testData } from "./testData"
 
 export const apiData = writable(testData)
 
-export const drinkNames = derived(apiData, ($apiData) => {
+export const users = derived(apiData, ($apiData) => {
     if ($apiData){
       return $apiData
     }
