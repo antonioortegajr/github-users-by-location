@@ -22,8 +22,7 @@
 	<div>
 		{#each $results.items as item}
 		<a href={item.html_url}>
-			<!-- svelte-ignore a11y-img-redundant-alt -->
-			<img src={item.avatar_url} alt="github profile image" />
+			<img src={item.avatar_url} alt="github profile" />
 			<div>{item.login}</div>
 		</a>
 	{/each}
