@@ -1,6 +1,6 @@
-domain_name = "yourdomain.com"
-bucket_name = "yourdomain.com"
+domain_name = "githubusersbylocation.com"
+bucket_name = "githubusersbylocation.com"
 
 common_tags = {
-  Project = "yourdomain"
+  Project = "githubusersbylocation"
 }

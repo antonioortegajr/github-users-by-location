@@ -1,5 +1,10 @@
+provider "aws" {
+  alias  = "acm_provider"
+  region = "us-east-1"
+}
+
 terraform {
-  required_version = "~> 0.14"
+  required_version = "~> 1.4.2"
 
   required_providers {
     aws = {
@@ -9,17 +14,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "yourdomain-terraform"
+    bucket = "githubusersbylocation-terraform"
     key    = "prod/terraform.tfstate"
     region = "us-east-1"
   }
-}
-
-provider "aws" {
-  region = "us-east-1"
-}
-
-provider "aws" {
-  alias  = "acm_provider"
-  region = "us-east-1"
 }
