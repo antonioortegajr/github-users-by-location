@@ -34,7 +34,7 @@ https://api.github.com/search/users?q=location:Eugene&page=20&per_page=10
 
 ## Local Development
 
-Install the dependencies...
+Install the dependencies.
 
 ```bash
 cd github-users-by-location 
