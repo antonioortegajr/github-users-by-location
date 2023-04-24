@@ -47,4 +47,14 @@ npm install
 npm run dev
 ```
 
+```bash
+npm run build
+```
+
 Navigate to [localhost:8080](http://localhost:8080). You should see the app running.
+
+## On S3
+
+This is deployed to s3 (manually at the moment. Plans to set up CICD in works).
+
+Current S3 link: https://s3.amazonaws.com/www.githubusersbylocation.com/index.html
