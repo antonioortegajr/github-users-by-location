@@ -23,10 +23,9 @@ https://api.github.com/search/users?q=location:Eugene&page=20&per_page=10
 - Cloud : AWS
 - CI/CD: Github Actions
 
-
 ## API
 
-Github api is used for the searching
+Github api is used for the searching. Docs: https://docs.github.com/en/rest?apiVersion=2022-11-28
 
 Example API call:
 https://api.github.com/search/users?q=location:Eugene&page=20&per_page=10
