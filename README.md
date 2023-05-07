@@ -1,9 +1,9 @@
 # github-users-by-location
-Find and display github users by location search
+Find and display github users by location search.
 
 ## About
 
-This project is to display github users by location search. This will be an MVP. A more production project may be started elsewhere.
+This project is to display github users by location search. This will be an MVP. A more production project may be started elsewhere.This is a work in progress meant for anyone looking to do some open source fun.
 
 githubusersbylocation.com
 
@@ -18,10 +18,10 @@ https://api.github.com/search/users?q=location:Eugene&page=20&per_page=10
 ## Stack
 
 - Version Control: Github
-- Frontend: svelt
-- Infrastructure: teraform
+- Frontend: [svelt](https://svelte.dev/)
+- Infrastructure: [teraform](https://www.terraform.io/)
 - Cloud : AWS
-- CI/CD: Github Actions
+- CI/CD: [Github Actions](https://docs.github.com/en/actions)
 
 ## API
 
@@ -58,3 +58,9 @@ npm run build
 This is deployed to s3 (manually at the moment. Plans to set up CICD in works).
 
 Current S3 link: https://s3.amazonaws.com/www.githubusersbylocation.com/index.html
+
+Live Domain: http://www.githubusersbylocation.com/
+
+## Contributing to this Project
+
+Anyone looking to contribute to this project please read [this doc](/CONTRIBUTING.md)
