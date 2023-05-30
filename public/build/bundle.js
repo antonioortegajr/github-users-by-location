@@ -466,10 +466,11 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Enter a location";
-    			attr_dev(h1, "class", "svelte-v2gg4g");
+    			attr_dev(h1, "class", "svelte-gyc9zc");
     			add_location(h1, file$1, 3, 4, 43);
     			add_location(p, file$1, 4, 1, 85);
     			attr_dev(div, "id", "headline");
+    			attr_dev(div, "class", "svelte-gyc9zc");
     			add_location(div, file$1, 2, 0, 19);
     		},
     		l: function claim(nodes) {
@@ -658,7 +659,7 @@ var app = (function () {
     };
 
     const apiData = writable(testData);
-    const drinkNames = derived(apiData, ($apiData) => {
+    derived(apiData, ($apiData) => {
         if ($apiData) {
             return $apiData;
         }
@@ -674,7 +675,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (21:2) {#each $results.items as item}
+    // (23:2) {#each $results.items as item}
     function create_each_block(ctx) {
     	let a;
     	let img;
@@ -695,11 +696,13 @@ var app = (function () {
     			t1 = text(t1_value);
     			t2 = space();
     			if (!src_url_equal(img.src, img_src_value = /*item*/ ctx[6].avatar_url)) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "github profile image");
-    			add_location(img, file, 23, 3, 748);
-    			add_location(div, file, 24, 3, 808);
+    			attr_dev(img, "alt", "github profile");
+    			attr_dev(img, "class", "svelte-1eey6uy");
+    			add_location(img, file, 24, 3, 764);
+    			add_location(div, file, 25, 3, 818);
+    			attr_dev(a, "class", "profile-item svelte-1eey6uy");
     			attr_dev(a, "href", a_href_value = /*item*/ ctx[6].html_url);
-    			add_location(a, file, 21, 2, 671);
+    			add_location(a, file, 23, 2, 715);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -729,7 +732,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(21:2) {#each $results.items as item}",
+    		source: "(23:2) {#each $results.items as item}",
     		ctx
     	});
 
@@ -740,11 +743,12 @@ var app = (function () {
     	let main;
     	let headline;
     	let t0;
+    	let div0;
     	let input;
     	let t1;
     	let button;
     	let t3;
-    	let div;
+    	let div1;
     	let current;
     	let mounted;
     	let dispose;
@@ -762,23 +766,27 @@ var app = (function () {
     			main = element("main");
     			create_component(headline.$$.fragment);
     			t0 = space();
+    			div0 = element("div");
     			input = element("input");
     			t1 = space();
     			button = element("button");
     			button.textContent = "Search";
     			t3 = space();
-    			div = element("div");
+    			div1 = element("div");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
     			attr_dev(input, "type", "string");
-    			add_location(input, file, 17, 1, 533);
-    			add_location(button, file, 18, 1, 578);
-    			add_location(div, file, 19, 1, 630);
-    			attr_dev(main, "class", "svelte-1knh9dm");
-    			add_location(main, file, 15, 0, 511);
+    			add_location(input, file, 18, 2, 544);
+    			add_location(button, file, 19, 2, 590);
+    			attr_dev(div0, "class", "search svelte-1eey6uy");
+    			add_location(div0, file, 17, 1, 521);
+    			attr_dev(div1, "class", "profile-results svelte-1eey6uy");
+    			add_location(div1, file, 21, 1, 650);
+    			attr_dev(main, "class", "svelte-1eey6uy");
+    			add_location(main, file, 15, 0, 499);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -787,16 +795,17 @@ var app = (function () {
     			insert_dev(target, main, anchor);
     			mount_component(headline, main, null);
     			append_dev(main, t0);
-    			append_dev(main, input);
+    			append_dev(main, div0);
+    			append_dev(div0, input);
     			set_input_value(input, /*inputValue*/ ctx[0]);
-    			append_dev(main, t1);
-    			append_dev(main, button);
+    			append_dev(div0, t1);
+    			append_dev(div0, button);
     			append_dev(main, t3);
-    			append_dev(main, div);
+    			append_dev(main, div1);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				if (each_blocks[i]) {
-    					each_blocks[i].m(div, null);
+    					each_blocks[i].m(div1, null);
     				}
     			}
 
@@ -829,7 +838,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(div, null);
+    						each_blocks[i].m(div1, null);
     					}
     				}
 
@@ -913,7 +922,6 @@ var app = (function () {
     	$$self.$capture_state = () => ({
     		Headline,
     		apiData,
-    		drinkNames,
     		inputValue,
     		results,
     		getData,
@@ -969,4 +977,3 @@ var app = (function () {
     return app;
 
 })();
-//# sourceMappingURL=bundle.js.map
