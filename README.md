@@ -64,3 +64,9 @@ Live Domain: http://www.githubusersbylocation.com/
 ## Contributing to this Project
 
 Anyone looking to contribute to this project please read [this doc](/CONTRIBUTING.md)
+
+## Contribution
+
+Thank you for your interest in contributing to this project!
+
+Check this link for open issues:  https://github.com/antonioortegajr/github-users-by-location/contribute
