@@ -22,6 +22,17 @@ https://api.github.com/search/users?q=location:Eugene&page=20&per_page=10
 - Infrastructure: [teraform](https://www.terraform.io/)
 - Cloud : AWS
 - CI/CD: [Github Actions](https://docs.github.com/en/actions)
+- Rollup : Module Bundler
+- Jest: Testing Library
+
+## Version Requirements
+
+- **Node.js**: 20.11.0 (or latest LTS)
+- **Terraform**: 1.4.2
+- **Svelte**: ^3.55.0
+- **Rollup**: ^3.15.0
+- **Jest**: ^29.5.0
+- **TypeScript**: ^5.4.5
 
 ## API
 
@@ -51,7 +62,6 @@ Navigate to [localhost:8080](http://localhost:8080). You should see the app runn
 ```bash
 npm run build
 ```
-
 
 ## On S3
 
